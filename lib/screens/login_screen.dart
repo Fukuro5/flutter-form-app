@@ -33,8 +33,8 @@ class _SignUpFormState extends State<SignUpForm> {
       return 'Password must be 8-64 characters long';
     }
 
-    if (!uppercaseAndLowerCaseRegex.hasMatch(value)) {
-      return 'At least one uppercase and one lowercase letter';
+    if (!atLeastOneUppercaseRegex.hasMatch(value)) {
+      return 'At least one uppercase letter';
     }
 
     if (!atLeastOnNumberRegex.hasMatch(value)) {
